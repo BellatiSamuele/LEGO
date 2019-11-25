@@ -1,0 +1,27 @@
+{
+  "modelli": [
+    {
+      "id": 7245,
+      "theme": "City",
+      "name": "Prisoner Transport",
+      "year": 2005,
+      "imgSrc": "poliz.jpg" 
+    },
+
+    {
+      "id": 7741,
+      "theme": "City",
+      "name": "Police Helicopter",
+      "year": 2008,
+      "imgSrc": "elicott.jpg"
+    },
+
+    {
+     "id": 7991,
+      "theme": "City",
+      "name": "Recycling Truck",
+      "year": 2007,
+      "imgSrc": "netturbino.jpg"
+    }
+  ]
+}

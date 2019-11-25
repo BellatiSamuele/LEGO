@@ -1,0 +1,17 @@
+doctype html
+html
+ head
+   title #{title}
+   link(rel='stylesheet', href='/css/style.css')
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+   header.header
+         h1 #{title}
+   article.container
+     each model in models
+       div.model
+         div.model-image(style=`background: url('/img/${model.imgSrc}') top center no-repeat; background-size: cover;`)
+         h2.model-name
+           | #{model.theme} - #{model.year}
+         a(href=`/profile?id=${model.id}`)
+           | View Profile
