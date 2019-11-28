@@ -7,14 +7,13 @@ html
  body
     header.header
         h1 #{title}
-    article.container
-        div.model
-            div.model-image
-                img(src=`/img/${models.imgSrc}`)
-            div.model-details
-                h1.model-name
-                    | #{models.name} 
-                h2.model-theme
-                    | #{models.theme} 
-                h2.model-year
-                    | #{models.year}
+    div.model
+        div.model-image
+            img(src=`/img/${model.imgSrc}`)
+        div.model-details
+            h1.model-name
+                | Nome: #{model.name} 
+            h2.model-theme
+                | Tema: #{model.theme} 
+            h2.model-year
+                | Anno: #{model.year}

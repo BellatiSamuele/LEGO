@@ -11,16 +11,15 @@ app.listen(3000, function () {
 
 app.get('/', function (req, res) {
   res.render('index', {
-      title: "Scegli il modello",
-      models: models.modelli
+    title: "Scegli il modello",
+    models: models.modelli
  });
 });
 
 app.get('/model', (req, res) => {
-  const model = models.modelli.find((m) => m.id === req.query.id);
+  const model = models.modelli.find((p) => p.id === req.query.id);
   res.render('model', {
-    title: `About ${models.imgSrc} ${models.name} ${models.theme} ${models.year}`,
-    model,
-    models: models.modelli
+    title: `Modello: ${model.name}`,
+    model
   });
 });
