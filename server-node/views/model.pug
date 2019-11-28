@@ -10,8 +10,10 @@ html
     article.container
          each model in models
             div.model
-                img(src=`/img/${model.imgSrc}`)
-                h2.model-name
-                    | #{model.theme} - #{model.year}
-                a(href=`/model?id=${model.id}`)
-                    | View Profile
+                div.model-details
+                    h1.model-name
+                        | #{model.name} 
+                    h2.model-theme
+                        | #{model.theme} 
+                    h2.model-year
+                        | #{model.year}
