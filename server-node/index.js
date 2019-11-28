@@ -19,7 +19,8 @@ app.get('/', function (req, res) {
 app.get('/model', (req, res) => {
   const model = models.modelli.find((m) => m.id === req.query.id);
   res.render('model', {
-    title: `About ${models.name} ${models.theme} ${models.year}`,
+    title: `About ${models.imgSrc} ${models.name} ${models.theme} ${models.year}`,
     model,
+    models: models.modelli
   });
 });

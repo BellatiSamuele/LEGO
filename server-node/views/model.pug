@@ -8,12 +8,13 @@ html
     header.header
         h1 #{title}
     article.container
-         each model in models
-            div.model
-                div.model-details
-                    h1.model-name
-                        | #{model.name} 
-                    h2.model-theme
-                        | #{model.theme} 
-                    h2.model-year
-                        | #{model.year}
+        div.model
+            div.model-image
+                img(src=`/img/${models.imgSrc}`)
+            div.model-details
+                h1.model-name
+                    | #{models.name} 
+                h2.model-theme
+                    | #{models.theme} 
+                h2.model-year
+                    | #{models.year}
