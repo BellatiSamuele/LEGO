@@ -5,6 +5,10 @@ const models = require('./models.json');
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'pug'); 
 
+var cors = require('cors');
+
+app.use(cors()); 
+
 app.listen(3000, function () {
  console.log('Example app listening on port 3000!');
 });
@@ -22,4 +26,9 @@ app.get('/model', (req, res) => {
     title: `Modello: ${model.name}`,
     model
   });
+});
+
+app.get('/api',function(req,res){
+    res.setHeader('Content-Type', 'application/json');
+    res.sendFile(path.join(__dirname+'/models.json'));
 });

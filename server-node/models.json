@@ -1,27 +1,39 @@
 {
   "modelli": [
     {
-      "id": 7245,
+      "id": "7245",
       "theme": "City",
       "name": "Prisoner Transport",
       "year": 2005,
-      "imgSrc": "poliz.jpg" 
+      "imgSrc": "poliz.jpg" ,
+      "instruct1": "1-001.jpg",
+      "instruct2": "1-002.jpg",
+      "instruct3": "1-003.jpg",
+      "instruct4": "1-004.jpg"
     },
 
     {
-      "id": 7741,
+      "id": "7741",
       "theme": "City",
       "name": "Police Helicopter",
       "year": 2008,
-      "imgSrc": "elicott.jpg"
+      "imgSrc": "elicott.jpg",
+      "instruct1": "2-001.jpg",
+      "instruct2": "2-002.jpg",
+      "instruct3": "2-003.jpg",
+      "instruct4": "2-004.jpg"
     },
 
     {
-     "id": 7991,
+     "id": "7991",
       "theme": "City",
       "name": "Recycling Truck",
       "year": 2007,
-      "imgSrc": "netturbino.jpg"
+      "imgSrc": "netturbino.jpg",
+      "instruct1": "3-001.jpg",
+      "instruct2": "3-002.jpg",
+      "instruct3": "3-003.jpg",
+      "instruct4": "3-004.jpg"
     }
   ]
 }
